@@ -1,6 +1,6 @@
 resource "aws_instance" "example" {
  
-  ami         = "ami-0d8f6eb4f641ef691"
+  ami         = "ami-0b898040803850657"
   instance_type = "t2.micro"
  
   tags {
