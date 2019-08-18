@@ -1,0 +1,4 @@
+---
+# defaults file for roles/app
+
+dest: /var/www/html/
