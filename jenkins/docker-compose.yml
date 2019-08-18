@@ -1,0 +1,8 @@
+version: "2"
+services:
+  jenkins:
+    image: jenkins/jenkins
+    ports:
+      - "30001:8080"
+    volumes:
+      - /home/cmosmar/Documents/oracle-pipeline/oracledev/jenkins/jenkins_home:/var/jenkins_home

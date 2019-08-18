@@ -1,0 +1,15 @@
+---
+# tasks file for roles/app
+- name: Touch the same file, but add/remove some permissions
+  file:
+    path: /etc/osmar.conf
+    state: touch
+    mode: u+rw,g-wx,o-rwx
+- name: Installing httpd
+  yum:
+    name: httpd
+    state: latest
+
+- name: Upload files
+  copy: src=index.html dest={{ dest }}
+  notify: HTTPD_Restarted
