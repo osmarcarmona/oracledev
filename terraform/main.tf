@@ -72,6 +72,6 @@ resource "aws_instance" "app_server" {
         }
 
         provisioner "local-exec" {
-                command ="ansible-playbook -i /etc/ansible/ec2.py /home/cmosmar/Documents/oracle-pipeline/oracledev/ansible/web-server.yml --private-key=oracle.pem --user ec2-user"
+                command ="ansible-playbook -i /etc/ansible/ec2.py /home/cmosmar/Documents/oracle-pipeline/oracledev/ansible/web-server.yml --private-key=../../../secrets/oracle.pem --user ec2-user"
         }
 }

@@ -1,6 +1,6 @@
 # AWS Config
 variable "ssh_private_key" {
-        default         = "oracle.pem"
+        default         = "../../../secrets/oracle.pem"
         description     = "Private key for us-east-1"
 }
 
